@@ -1,0 +1,8 @@
+<!--page/detail/detail.wxml-->
+<!-- 2.2. 用于返回上一级页面 -->
+<!-- 默认delta返回一级 -->
+<navigator open-type="navigateBack">返回首页</navigator>
+<!-- 给delta设置值可返回n级 -->
+<navigator open-type="navigateBack" delta="2">返回首页</navigator>
+
+<view bind:tap="BackPath">返回</view>
