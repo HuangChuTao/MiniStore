@@ -1,0 +1,40 @@
+/* components/w-goods-list/w-goods-list.wxss */
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.goods-list-item {
+  width: 48%;
+  text-align: center;
+
+}
+
+.goods-list-img {
+  width: 100%;
+  padding: 16rpx 0;
+}
+
+.goods-list-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 34rpx;
+}
+
+.goods-list-price {
+  font-size: 32rpx;
+  padding-right: 12rpx;
+  color: #ff5777;
+}
+
+.goods-list-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.goods-list-cfav {
+  font-size: 32rpx;
+}

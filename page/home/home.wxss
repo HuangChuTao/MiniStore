@@ -1,28 +1,8 @@
 /* page/home/home.wxss */
-.div1 {
-  width: 400rpx;
-  height: 400rpx;
-  background-color: pink;
-}
-
-.div2 {
-  width: 200rpx;
-  height: 200rpx;
-  background-color: rgb(19, 12, 12);
-  color: white;
-}
-
-.div3 {
-  width: 100rpx;
-  height: 100rpx;
-  background-color: rgba(91, 139, 91, 0.555);
-  color: white;
-}
-
-.red {
-  color: red;
-}
-
-.pink {
-  color: pink;
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }

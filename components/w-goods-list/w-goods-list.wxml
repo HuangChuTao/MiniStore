@@ -1,0 +1,12 @@
+<!--components/w-goods-list/w-goods-list.wxml-->
+<view class="goods-list">
+  <block  wx:for="{{goods}}" wx:key="index">
+    <view class="goods-list-item">
+      <image class="goods-list-img" src="{{item.show.img}}"></image>
+      <view class="goods-list-title">{{item.title}}</view>
+      <text class="goods-list-price">${{item.price}}</text>
+      <image class="goods-list-icon" src="/assets/common/favor.png"/>
+      <text class="goods-list-cfav">{{item.cfav}}</text>
+    </view>
+  </block>
+</view>

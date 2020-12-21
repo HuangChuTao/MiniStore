@@ -1,16 +1,18 @@
-<!-- 1.页面跳转 -->
-<navigator url="/page/detail/detail">跳到详情页</navigator>
+<!-- 1.轮播图 -->
+<swiper list="{{ banner }}" />
 
-<!-- 2.navigator属性open-type -->
-<!-- 该方法跳转后会关闭原来的页面，不可用于tabbar -->
-<navigator url="/page/detail/detail"
-           open-type="redirect">
-           跳转到详情页2</navigator>
+<!-- 2.推荐部分 -->
+<w-recommend recommend="{{recommend}}" bind:imgLoad="imgLoad"/>
 
-<!-- 3.页面跳转并携带参数 -->
-<navigator url="/page/detail/detail?name=张三&age=18&height=1.88">跳转详情页并携带参数</navigator>
-<view>{{message}}</view>
+<!-- 3.本周流行部分 -->
+<w-popular />
 
+<!-- 4.tab-control部分 -->
+<w-tab-control id="tab-control" class="{{controlFixed ? 'fixed':''}}" title="{{title}}" bind:itemClick="tabClick"/>
+<w-tab-control title="{{title}}" wx:if="{{controlFixed}}"/>
 
-<!-- 4.通过代码跳转 -->
-<button bind:tap="detailPath">点击跳转到详情页</button>
+<!-- 5.首页商品展示 -->
+<w-goods-list goods="{{goods[defaultType].list}}"/>
+
+<!-- 6.点击回到顶部 -->
+<w-back-top wx:if="{{backIf}}"/>
